@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="708" prefWidth="1366" style="-fx-background-color: #03A9F4;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RegisterController">
+   <children>
+      <Button fx:id="backToLoginButton" mnemonicParsing="false" onAction="#backToLogin" style="-fx-background-color: #303F9F;" text="Back" textFill="#c5cae9" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0" />
+      <Label fx:id="userNameLabel" layoutX="506.0" layoutY="35.0" text="Please Enter Your Personal Data:" textFill="#1a237e">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Label>
+      <VBox layoutX="209.0" layoutY="84.0" prefHeight="209.0" prefWidth="180.0" spacing="6.0" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="84.0">
+         <children>
+            <TextField fx:id="regFirstName" promptText="First Name" />
+            <TextField fx:id="regLastName" promptText="Last Name" />
+            <TextField fx:id="regUserName" promptText="User Name" />
+            <PasswordField fx:id="regPassword" promptText="Password" />
+            <TextField fx:id="regAge" promptText="Age" />
+            <TextField fx:id="regCity" promptText="City" />
+            <TextField fx:id="regPhoneNumber" promptText="Phone Number" />
+         </children>
+      </VBox>
+      <Button fx:id="regButton" layoutX="661.0" layoutY="305.0" mnemonicParsing="false" onAction="#registerUser" style="-fx-background-color: #303F9F;" text="Register" textFill="#c5cae9" AnchorPane.leftAnchor="661.0" AnchorPane.topAnchor="305.0" />
+      <Label fx:id="regSuccLabel" layoutX="690.0" layoutY="364.0" prefHeight="27.0" prefWidth="0.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

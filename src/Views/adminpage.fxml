@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="708" prefWidth="1366" style="-fx-background-color: #03A9F4;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminPageController">
+   <children>
+      <Label layoutX="631.0" layoutY="50.0" text="Trip Info:" textFill="#1a237e" AnchorPane.leftAnchor="640.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="591.0" layoutY="105.0" prefHeight="120.0" prefWidth="200.0" spacing="6.0" AnchorPane.leftAnchor="591.0" AnchorPane.topAnchor="105.0">
+         <children>
+            <TextField fx:id="depCity" promptText="Depature City" />
+            <TextField fx:id="arrCity" promptText="Arrival City" />
+            <TextField fx:id="date" promptText="Date Format: dd-mm-yyyy , hh:mm" />
+            <TextField fx:id="price" promptText="Price" />
+         </children>
+      </VBox>
+      <Button fx:id="addTripButton" layoutX="660.0" layoutY="237.0" mnemonicParsing="false" onAction="#addNewTrip" style="-fx-background-color: #303F9F;" text="Add Trip" textFill="#c5cae9" />
+      <Label fx:id="tripAddedLabel" layoutX="588.0" layoutY="286.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="adminLogoutButton" layoutX="44.0" layoutY="37.0" mnemonicParsing="false" onAction="#adminLogout" style="-fx-background-color: #303F9F;" text="Logout" textFill="#c5cae9" />
+      <Label layoutX="634.0" layoutY="417.0" text="Edit Users:" textFill="#1a237e" AnchorPane.leftAnchor="634.0">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteUserButton" layoutX="629.0" layoutY="518.0" mnemonicParsing="false" onAction="#deleteUser" style="-fx-background-color: #303F9F;" text="Delete selected User" textFill="#c5cae9" />
+      <TextField fx:id="userIdToDelete" layoutX="618.0" layoutY="473.0" promptText="Enter User id" />
+      <Label fx:id="userDeletedLabel" layoutX="587.0" layoutY="568.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

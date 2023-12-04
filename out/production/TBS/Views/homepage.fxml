@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="708" prefWidth="1366" style="-fx-background-color: #03A9F4;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomePageController">
+   <children>
+      <Label layoutX="413.0" layoutY="83.0" text="Home Page" textFill="#1a237e" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="viewScheduleButton" layoutX="565.0" layoutY="157.0" mnemonicParsing="false" onAction="#goToTrainSchedule" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #303F9F;" text="View Train Schedule" textFill="#c5cae9">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="userLogoutButton" mnemonicParsing="false" onAction="#userLogout" style="-fx-background-color: #303F9F;" text="Logout" textFill="#c5cae9" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0" />
+   </children>
+</AnchorPane>

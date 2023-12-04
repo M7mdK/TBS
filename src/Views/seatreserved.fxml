@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="708" prefWidth="1366" style="-fx-background-color: #03A9F4;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SeatReservedController">
+    <children>
+        <Label layoutX="280.0" layoutY="274.0" text="Done! A seat was reserved for you :)" textFill="RED" AnchorPane.leftAnchor="280.0">
+            <font>
+                <Font name="System Bold Italic" size="48.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
